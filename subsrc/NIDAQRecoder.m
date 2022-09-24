@@ -115,7 +115,7 @@ classdef NIDAQRecoder
     methods (Access = private)
         
         function self = open_file(self)
-            self.para.fid  = fopen([self.para.filename,'.bin'],'w');
+            self.para.fid = fopen([self.para.filename,'.bin'],'w');
         end
         function self = close_file(self)
             self.para.fid = fclose(self.para.fid);
