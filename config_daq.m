@@ -7,11 +7,10 @@ config.Fs = 10000;
 
 %%% set channel for illuminance sensor and EMG
 ch_illum = 0;
-ch_emg_rt = 1;
-ch_emg_lt = 2;
-config.list_ch_input = [ch_illum;ch_emg_rt;ch_emg_lt];
+ch_force = 1;
+config.list_ch_input = [ch_illum;ch_force];
 config.num_ch = numel(config.list_ch_input);
-config.legend_ch = {'Illuminance sensor';'Right EMG';'Left EMG'};
+config.legend_ch = {'Illuminance sensor';'Force'};
 
 %%% internal settings for input
 config.load_time = 0.2*config.Fs;

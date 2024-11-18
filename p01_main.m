@@ -9,5 +9,7 @@ nidaq_recoder = nidaq_recoder.set_config_daq;
 %% make_gui
 nidaq_gui = NIDAQGUI;
 
+p02_realtime_proc;
+
 
 
